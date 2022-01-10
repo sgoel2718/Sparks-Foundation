@@ -1,0 +1,351 @@
+/*-----Home -----*/             
+body {
+    max-width: 100%;
+    height: auto;
+    color: #340ebd;
+    background-color: #fff;
+  }
+  
+  .main {
+    padding-bottom: 8%;
+  }
+  
+
+  /*-----IMAGES-----*/
+       
+  .logo {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50%;
+    margin-right: 100%;
+    cursor: pointer;
+  }
+  
+  .sideimg {
+    float: right;
+    margin-top:-500px;
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    align-self: right;
+    margin-left: 0%;
+    margin-top: -22%;
+  }
+  
+
+  /*------ header links------*/
+        
+  a {
+    max-width: 100%;
+    color: indigo;
+    font-family: sans-serif, monospace;
+    text-transform: lowercase;
+    text-align: right;
+    text-orientation: justify;
+  }
+  
+
+
+  /*----- header -----*/    
+  
+  .header {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 0;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10%;
+    margin-right: 30px;
+    line-height: 20px;
+  }
+  
+  .header ul li a {
+    text-decoration: none;
+    color: rgb(35, 92, 214);
+    text-transform: uppercase;
+    transition: 0.6s;
+    padding: 20px;
+  }
+  
+  .header ul li a:hover {
+    border-radius: 90px;
+    background-color: rgb(245, 195, 175);
+    padding: 10px 20px;
+  }
+  
+
+
+  /*----- button -----*/
+
+   button {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: medium;
+    border-radius: 24px;
+    background: transparent;
+    position: justify;
+    margin-left: 9%;
+    transition: 00.3s;
+  }
+  button a {
+    text-decoration: none;
+    color: rgb(9, 10, 10);
+  }
+  
+  button:hover {
+    background-color: rgb(15, 114, 160);
+  } 
+  
+
+
+  /*----- header 2 -----*/
+                                
+  .header h1 {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    font-weight: medium;
+    position: justify;
+    color: rgb(49, 128, 202);
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+    .header ul {
+      position: fixed;
+      width: 100%;
+      height: 20vh;
+      background: transparent;
+      top: 80px;
+      left: -100px;
+      text-align: center;
+      transition: all .5s;
+      justify-content: space-between;
+    }
+    .header ul li {
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .header ul li a {
+      font-size: 20px;
+      padding: 20px;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+
+
+
+  /*-----content-----*/
+                            
+  .content {
+    width: 90%;
+    height: auto;
+    position: justify;
+    text-align: justify;
+    margin-top: 10%;
+    margin-left: 7%;
+    padding: 4px;
+  }
+  
+  .content h2 {
+    font-size: 30px;
+    width: 600px;
+    max-width: 100%;
+    margin-top: 0%;
+    margin-left: 0px;
+  }
+  
+  .content p {
+    margin: 25px auto;
+    font-weight: 300;
+  }
+  
+ 
+ 
+  /*----- section -----*/                   
+             
+  .section {
+    margin-top: 20px;
+    background-color: darkslateblue;
+    margin-bottom: 20px;
+  }
+  .article-card {
+    margin-top: 40px;
+    padding: 2px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .section h3 {
+    text-align: center;
+    color: aliceblue;
+    line-height: 30px;
+    padding: 30px;
+  }
+  
+
+
+  /*-----cards -----*/        
+               
+  .site-container {
+    margin: 2em auto;
+    max-width: calc(100% -80px);
+  }
+  
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+  }
+  
+  .article-img {
+    margin: 0;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  
+  .article img img {
+    max-width: 10px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .article-card {
+    background: white;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .article-card:hover {
+    box-shadow: (0 4px 20px 0 rgba(34, 68, 123, 0.2));
+    cursor: pointer;
+  }
+  .article-content {
+    padding: 2erm;
+  }
+  
+  .article-content .card-catergory {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .article-content .card-title {
+    margin: 1rem;
+    margin-top: 10px;
+    margin-bottom: -12%;
+    color: #22447b;
+  }
+  
+  .article-content .card-excerpt {
+    margin-top: -20%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #6b82a7;
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .site-container {
+      max-width: 600px;
+    }
+    .article-card {
+      display: grid;
+      grid-template-rows: 200px 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 128px) {
+    site-container {
+      max-width: 156px;
+    }
+  }
+
+
+
+  /*----- footer-----*/            
+  
+  .footer {
+    background-color: rgb(42, 42, 38);
+    margin-top: -1.5%;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+  #footer_container {
+    max-width: 100%;
+    height: auto;
+    margin-left: 140px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .social_list {
+    list-style-type: none;
+  }
+  .social_list li a {
+   
+    padding: 50px;
+    color: #a3a3a3;
+    text-decoration: none;
+    max-width:100%;
+    width:30px;
+    height:12%;
+    position:justify-content;
+    display: grid;
+    float: right;
+
+  }
+  
+  .social_list li a:hover {
+    color: bisque;
+  } 
+  
+  .copyright_text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-top: 2%;
+    float: left;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: Uppercase;
+    font-size: 0.72em;
+    color: #a3a3a3;
+    margin-top: 34px;
+  }
